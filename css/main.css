@@ -43,10 +43,88 @@ nav .nav-right-section img {
     margin-left: 10px;
 }
 
+.section-container-apps{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 500px;
+    border-radius: 28px;
+    background-color: #e9eef6;
+    color: rgba(0, 0, 0, .87);   
+    right: 20px;
+    top: 55px;
+    overflow-y: auto;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    row-gap: 10px;
+
+}
+/* Estilo para la barra de desplazamiento completa */
+.section-container-apps::-webkit-scrollbar {
+    margin-top: 40px;
+    width: 8px; /* Ancho de la barra de desplazamiento vertical */
+    height: 12px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+/* Estilo para la pista de la barra de desplazamiento */
+.section-container-apps::-webkit-scrollbar-track {
+    background:transparent;
+    border-radius: 10px;
+}
+
+/* Estilo para la manija de la barra de desplazamiento (thumb) */
+.section-container-apps::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Estilo para la manija cuando el mouse pasa sobre ella */
+.section-container-apps::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.section-container-apps .container-primary-apps ,
+.section-container-apps .container-secondary-apps {
+    background-color: white;
+    width: 100%;
+    border-radius: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    padding:10px;
+    row-gap: 10px;
+    column-gap: 5px; 
+    height: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+
+}
+
+.section-container-apps .card img{
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+
+}
+.section-container-apps > .card p{
+    
+ font-size: 14px;
+  }
+
 main {
     margin-top: 150px;
     text-align: center;
+    position:relative
 }
+
 main .main-logo {
     width: 530px;
     margin: 0 auto;
